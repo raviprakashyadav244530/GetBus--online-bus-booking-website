@@ -1,32 +1,63 @@
+# 🚌 Bus Ticket Reservation System
 
-# Project Title
+The **Bus Ticket Reservation System** is a Java-based console application designed to provide customers with a smooth and personalized experience for booking and managing bus tickets. The system allows both administrators and customers to interact through a simple text-based interface, enabling ticket booking, cancellations, and schedule management.
 
-GetBus - Book Bus Travels, AC Bus & Bus Hire
+It securely stores and manages data such as:
+- Customer details
+- Bus routes and schedules
+- Frequent trips
+- Pickup and drop points
 
-An online bus ticket booking system with a login system, validated 
-payment form and ticket pdf print. 
-The whole backend is coded in core PHP and MySql.
-## Skills
-* Php
-* Mysql
-* Javascript
-* HTML
-* CSS
-## Main Features
-* New user validated sign-up form
-* Old user validated login form
-* Can choose number of seats based on number of vacant seats
-* Automatically updates seats left value to database
-* The payment form is completely validated - 16 digit card number, 3 digit cvv, expiry date must be at least 2 weeks from present date
-* Can print the ticket with all passenger and bus details already set.
-* There are two databases, one for user details and one for bus details.
-## Installation
-* Upload online_bus to the directory of your choice.
-* Import MySql Db file to your database software (E.g : PhpMyAdmin -> Create DB -> Import the database )
-* Configure connection between your database and server.
-* Navigate to the installation in your browser ( E.g : http://localhost/online_bus )
-* Done :)
-## Authors
+This project was developed individually during the **Construct Week** at **Masai School**, completed within five days, and proudly secured **1st position** among all submissions.
 
-https://github.com/Amarjit-Khan
+👉 _Click [here](#) to explore a detailed explanation of this application._
+
+---
+
+## ✨ Features
+
+### 🔐 Administrator Panel
+- Admin login with username and password
+- Add bus details: Name, Route, Type (AC/Non-AC), Seats, Departure & Arrival Time
+- Confirm bookings for customers
+
+### 👥 Customer Panel
+- Register as a new customer
+- Login with credentials
+- Book tickets (based on source/destination)
+- Cancel bookings
+
+### 🔁 Functionality
+- Go back to the previous menu at any step
+- Error messages for invalid input using exception handling
+- Prevent booking for same-day or past travel
+
+---
+
+## ⚙️ Technology Stack
+
+- 💻 **Java**
+- 🗃️ **MySQL**
+- 🔗 **JDBC**
+- 🛠️ **Spring Tool Suite / Eclipse**
+- 🌐 **Git & GitHub**
+
+---
+
+## 🧠 Lessons Learned
+
+- Deep understanding of Java, JDBC, and SQL integration
+- Hands-on experience in building CRUD-based Java applications
+- Better grasp of exception handling and user-flow design
+
+---
+
+## 📊 Overview of Database Design
+
+### 🗂️ ER Diagram
+
+- `Customer` and `Bus` have a **many-to-many** relationship
+- A `Booking` table acts as a **linking entity** between `Customer` and `Bus`
+
+
 
